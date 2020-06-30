@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[FrozenAlex]]></title><description><![CDATA[My blog built on gatsby]]></description><link>https://frozenalex.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 30 Jun 2020 19:12:52 GMT</lastBuildDate><item><title><![CDATA[First post of 2020 and ever]]></title><description><![CDATA[alt text Hello internet, my name is Alex and this is my blog, where I’m going to write some articles.
+I am a web developer with a need to…]]></description><link>https://frozenalex.github.io/2020/first-post-ever/</link><guid isPermaLink="false">https://frozenalex.github.io/2020/first-post-ever/</guid><pubDate>Sat, 04 Jan 2020 12:40:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://images.unsplash.com/photo-1483309830935-35efd1b07946?ixlib=rb-1.2.1&amp;#x26;q=80&amp;#x26;fm=jpg&amp;#x26;crop=entropy&amp;#x26;cs=tinysrgb&amp;#x26;w=2000&amp;#x26;fit=max&amp;#x26;ixid=eyJhcHBfaWQiOjExNzczfQ&quot; alt=&quot;alt text&quot; title=&quot;Logo Title Text 1&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Hello internet, my name is Alex and this is my blog, where I’m going to write some articles.
+I am a web developer with a need to write down important information. I’m too afraid of making changes to the public Wiki so I created my own personal space where I can write what I want and not care about reviews or anything lol.&lt;/p&gt;
+&lt;p&gt;If my article helped you or not you may let me know on Twitter, I like to see the results of taking time to write these articles and it will motivate me to write even more. And if you’ve got any problems, I’d be happy to help.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/be42ef00ac9a63780c2be1a771286bae/69b48/peppercarrot-wallpaper_by-David-Revoy.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgQA/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAG9xtKssz//xAAbEAABBAMAAAAAAAAAAAAAAAABAAIREgMxMv/aAAgBAQABBQLgklVlDI6oe6Rr/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERE//aAAgBAwEBPwGmcP/EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAECAQE/AYr/xAAYEAADAQEAAAAAAAAAAAAAAAAAEDERIf/aAAgBAQAGPwLDipV//8QAGRABAQEBAQEAAAAAAAAAAAAAAREAIUFR/9oACAEBAAE/IbAnJ83gNy+pMkV55FzLjf/aAAwDAQACAAMAAAAQg+//xAAWEQEBAQAAAAAAAAAAAAAAAAARACH/2gAIAQMBAT8QAku3/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERUf/aAAgBAgEBPxBtpZ//xAAbEAEAAgIDAAAAAAAAAAAAAAABABEhQTGBsf/aAAgBAQABPxB6zGS+Q4DtSojYJ5FiIhtiMa1cYzOS225//9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;alt text&quot;
+        title=&quot;Read The Flying Manual&quot;
+        src=&quot;/static/be42ef00ac9a63780c2be1a771286bae/87945/peppercarrot-wallpaper_by-David-Revoy.jpg&quot;
+        srcset=&quot;/static/be42ef00ac9a63780c2be1a771286bae/b95e4/peppercarrot-wallpaper_by-David-Revoy.jpg 256w,
+/static/be42ef00ac9a63780c2be1a771286bae/1779b/peppercarrot-wallpaper_by-David-Revoy.jpg 512w,
+/static/be42ef00ac9a63780c2be1a771286bae/87945/peppercarrot-wallpaper_by-David-Revoy.jpg 1024w,
+/static/be42ef00ac9a63780c2be1a771286bae/6afe2/peppercarrot-wallpaper_by-David-Revoy.jpg 1536w,
+/static/be42ef00ac9a63780c2be1a771286bae/69b48/peppercarrot-wallpaper_by-David-Revoy.jpg 1920w&quot;
+        sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item></channel></rss>

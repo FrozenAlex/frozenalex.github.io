@@ -1,0 +1,42 @@
+/* CSS main file */
+@import "./colors.css"; /* Color scheme */
+@import "./tailwind.css"; /* Tailwind import */
+@import "./typography.css"; /* Typography*/
+@import "./navbar.css";
+@import "./input.css";
+
+/*** Things that have not many styles ***/
+
+body {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+}
+
+/* Loading overlay */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(31, 95, 76, 0.329);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.loading-spinner {
+  animation: spin 2s linear infinite;
+}
+
+.loading-message {
+  color: white;
+  padding-top: 2em;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

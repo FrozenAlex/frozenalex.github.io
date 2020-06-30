@@ -1,0 +1,14 @@
+/* Navbar component */
+.header {
+  background-color: var(--primary);
+  color: var(--accent-color);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+  
+}

@@ -1,12 +1,10 @@
 import * as React from "react"
-import { Link } from "gatsby"
 
-import { FaTwitter, FaGithub, FaMoon, FaSun } from "react-icons/fa"
+import { FaMoon, FaSun } from "react-icons/fa"
 
 class ThemeSwitch extends React.Component<{}, { night: boolean }> {
   constructor(props: any) {
     super(props)
-
     this.state = {
       night: true,
     }
@@ -16,7 +14,7 @@ class ThemeSwitch extends React.Component<{}, { night: boolean }> {
     let icon = (this.state.night)? <FaMoon ></FaMoon>: <FaSun></FaSun>; 
 
     return (
-      <div className="" onClick={this.toggleTheme.bind(this)}>
+      <div  className="cursor-pointer" onClick={this.toggleTheme.bind(this)}>
         {icon}
       </div>
     )
@@ -32,6 +30,8 @@ class ThemeSwitch extends React.Component<{}, { night: boolean }> {
     else {
       document.documentElement.setAttribute('data-theme', 'light');
     }  
+
+    this.setState({ night: dark })
   }
 
   toggleTheme() {

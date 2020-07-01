@@ -8,7 +8,7 @@
 /*** Things that have not many styles ***/
 
 body {
-  background-color: var(--background-primary);
+  background-color: var(--background);
   color: var(--text-primary);
 }
 
@@ -19,11 +19,13 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(31, 95, 76, 0.329);
+  background: var(--background);
+  opacity: 0.85;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  pointer-events: none;
 }
 
 .loading-spinner {
@@ -31,7 +33,7 @@ body {
 }
 
 .loading-message {
-  color: white;
+  color: var(--text-primary);
   padding-top: 2em;
 }
 

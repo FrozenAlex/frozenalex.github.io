@@ -4,19 +4,28 @@
 
 /* Dark mode by default xD */
 :root {
-  --primary: #222;
-  --accent-color: #00bcd4;
-  --background-primary: #222;
+  
+  --accent: #00cbe6;
+  --background: #222;
+
+  --button-primary: rgb(255, 255, 255);
+  --button-secondary: #222;
+  --button-primary-text: #222;
+  --button-secondary-text: #222;
   --text-primary: #eee;
   --text-secodary: color(var(--text-primary) shade(20%));
 }
 
 /* Light mode */
 [data-theme="light"] {
-    --primary: #222;
-    --background-primary: #fff;
-    --text-primary: #222;
-    --text-secodary: color(var(--text-primary) tint(10%));
+  --background: rgb(255, 255, 255);
+  --accent: #00b3ca;
+  --button-primary: #222;
+  --button-secondary: rgb(77, 77, 77);
+  --button-primary-text: rgb(226, 226, 226);
+  --button-secondary-text: rgb(255, 255, 255);
+  --text-primary: rgb(0, 0, 0);
+  --text-secodary: color(var(--text-primary) shade(20%));
 }
 
 /* purgecss end ignore */

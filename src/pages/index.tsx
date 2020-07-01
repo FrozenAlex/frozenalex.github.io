@@ -10,25 +10,21 @@ const SiteIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="Alex Blog" />
       {/* Hero */}
-      <div
-        className="min-h-screen py-20">
+      <div className="min-h-screen py-20">
         <div className="container text-center mx-auto px-2">
-          <h2 className="text-2xl md:text-4xl font-bold mb-2 text-white">Hi, my name is <span className="text-accent">Alex</span></h2>
+          <h2 className="text-2xl md:text-4xl font-bold mb-2 text-white">
+            Hi, my name is <span className="text-accent">Alex</span>
+          </h2>
           <h3 className="text-xl md:text-2xl mb-8 text-textsecondary">
-            I make responsive websites with React and TypeScript
+            I make responsive websites with React and TypeScript,<br/>
           </h3>
           <Link
             to="/contact/"
-            style={{
-              background: "white",
-              color: "black"
-            }}
-            className="font-semibold rounded-full py-3 md:py-4 px-5 md:px-8 shadow-lg uppercase tracking-wider text-sm"
+            className="bg-buttonbgp text-buttontxp font-semibold rounded-full py-3 md:py-4 px-5 md:px-8 shadow-lg uppercase tracking-wider text-sm"
           >
             Contact me
           </Link>
         </div>
-        
       </div>
     </Layout>
   )

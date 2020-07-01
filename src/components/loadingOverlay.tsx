@@ -14,7 +14,7 @@ const LoadingOverlay = ({
   children?: React.ReactNode
 }) => {
   return (
-    <div className="loading-overlay" style={!isLoading ? { display: "none" } : {}}>
+    <div className="loading-overlay bg-background text-primary" style={!isLoading ? { display: "none" } : {}}>
       <FaSpinner className="loading-spinner" size={35}></FaSpinner>
       <div className="loading-message">{message || ""}</div>
       {children}

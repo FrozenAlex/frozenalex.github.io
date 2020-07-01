@@ -1,10 +1,10 @@
 /* Styling of input elements */
 textarea {
-  background: var(--background-primary);
+  background: var(--background);
 }
 
 input {
-  background: var(--background-primary);
+  background: var(--background);
 }
 
 .custom-file-input::-webkit-file-upload-button {

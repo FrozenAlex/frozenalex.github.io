@@ -105,7 +105,7 @@ class ContactPage extends React.Component<any, ContactPageState> {
           </div>
           <div className="mb-4 text-center">
             <input
-              className="bg-teal-500 text-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider disabled:opacity-75 "
+              className="bg-buttonbgp text-buttontxp font-semibold rounded-full py-3 md:py-4 px-5 md:px-8 shadow-lg uppercase tracking-wider text-sm disabled:opacity-75 "
               type="submit"
               value="Submit"
             />

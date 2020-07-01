@@ -40,7 +40,7 @@ class Header extends React.Component<{}, { open: boolean }> {
          
           <div className="block md:hidden">
             <button
-              className="flex items-center px-3 py-1 select-none outline-none "
+              className="flex items-center px-3 py-1 select-none outline-none focus:outline-none"
               onClick={this.toggleNavBar.bind(this)}
             >
               <svg

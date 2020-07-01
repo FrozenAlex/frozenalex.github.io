@@ -20,7 +20,7 @@ const SiteIndex = ({ data, location }) => {
           </h3>
           <Link
             to="/contact/"
-            className="bg-buttonbgp text-buttontxp font-semibold rounded-full py-3 md:py-4 px-5 md:px-8 shadow-lg uppercase tracking-wider text-sm"
+            className="focus:outline-none bg-buttonbgp text-buttontxp font-semibold rounded-full py-3 md:py-4 px-5 md:px-8 shadow-lg uppercase tracking-wider text-sm"
           >
             Contact me
           </Link>

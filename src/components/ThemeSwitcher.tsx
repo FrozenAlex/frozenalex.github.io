@@ -7,18 +7,8 @@ class ThemeSwitch extends React.Component<{}, { night: boolean }> {
   constructor(props: any) {
     super(props)
 
-    let theme = localStorage.getItem("theme");
-    let dark = (theme !== "light");
-
-    if (dark) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    }
-    else {
-      document.documentElement.setAttribute('data-theme', 'light');
-    }  
-
     this.state = {
-      night: dark,
+      night: true,
     }
   }
 
@@ -31,6 +21,19 @@ class ThemeSwitch extends React.Component<{}, { night: boolean }> {
       </div>
     )
   }
+
+  componentDidMount(){
+    let theme = localStorage.getItem("theme");
+    let dark = (theme !== "light");
+
+    if (dark) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    else {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }  
+  }
+
   toggleTheme() {
 
     let dark = !this.state.night;

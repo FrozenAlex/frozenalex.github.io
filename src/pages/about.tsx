@@ -5,39 +5,31 @@ import Layout from "../layouts/layout"
 import SEO from "../components/seo"
 import { FaBlender, FaDatabase, FaDocker, FaCss3, FaJs } from "react-icons/fa"
 
-
 const About = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
     <Layout shrink={true} location={location} title={siteTitle}>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-        }}
-      >
-        <div className="flex-grow">
+      <div className="flex my-12 flex-col md:flex-row">
+        <div className="md:w-1/2">
           <h1 className="m-5 text-5xl text-center">About me</h1>
           My name is Alexander Uskov I'm a web developer, I always try to use the latest web
           technology to build highly performant and secure websites.
         </div>
-        <div>
-          <h1 className="m-5 text-5xl text-center">Technologies I use:</h1>
+        <div className="md:w-1/2">
+          <h1 className="m-5 text-5xl text-center">What I use:</h1>
           <div className="max-w-sm mx-auto">
-            <ul className="flex justify-between ">
+            <ul className="flex justify-between flex-wrap">
               <li>JavaScript</li>
               <li>CSS</li>
               <li>Docker</li>
               <li>TypeScript</li>
-              <li>MySQL</li>
+              <li>SQL</li>
             </ul>
           </div>
         </div>
         <p className="text-md "></p>
       </div>
-
-      {/* Skills */}
 
       <SEO title="About" />
     </Layout>

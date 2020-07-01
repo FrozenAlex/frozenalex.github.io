@@ -17,17 +17,24 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article style={{
-        padding: "1em",
-        boxSizing:"border-box",
-        maxWidth:"1200px"
-      }} className="container-small mx-auto">
-        <header className="text-center">
-          <h1 className="m-6 text-4xl">{post.frontmatter.title}</h1>
-          <p className="m-6 text-xl">{post.frontmatter.date}</p>
+      <article
+        style={{
+          // boxSizing:"border-box",
+          // maxWidth:"1200px"
+        }}
+        className="container mx-auto"
+      >
+        <header className="text-center p-4">
+          <h1 className="font-bold text-2xl md:text-3xl">{post.frontmatter.title}</h1>
+          <p className="font-thin text-sm md:text-xl">{post.frontmatter.date}</p>
         </header>
-        <section className="content" dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr />
+        <section className="content px-4 lg:px-0" 
+        style={{
+          // padding: "1em",
+          // boxSizing:"border-box",
+          // maxWidth:"1200px"
+        }} 
+        dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
 
       <nav>

@@ -11,10 +11,10 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout shrink={true} location={location} title={siteTitle}>
-      <div className="mx-auto px-4">
-        <h1 className="text-4xl pt-5 text-center pb-6">Blog</h1>
+      <div className="mx-auto px-2 md:px-4">
+        <h1 className="text-2xl md:text-4xl  text-center py-6">Blog</h1>
         <SEO title="Blog" />
-        {/* <Bio /> */}
+        
         <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-3 content-center w-full">
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
@@ -25,20 +25,21 @@ const BlogIndex = ({ data, location }) => {
                     className="h-64 w-full object-cover"
                     fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
                   />
-                  <div className="px-6 py-4">
+                  {/* Card */}
+                  <div className="px-4 md:px-6 py-4">
                     <header>
-                      <h3 className="font-bold text-xl mb-2">
+                      <h3 className="font-bold text-md -mb-1">
                         {/* <Link style={{ boxShadow: `none` }} to={node.fields.slug}> */}
                         {title}
                         {/* </Link> */}
                       </h3>
-                      <small className="text-gray-700 text-base text-sm">
+                      <small className="opacity-75  text-sm pt-0">
                         {node.frontmatter.date}
                       </small>
                     </header>
                     <section>
                       <p
-                        className="text-gray-700 text-base"
+                        className="opacity-75 text-base"
                         dangerouslySetInnerHTML={{
                           __html: node.frontmatter.description || node.excerpt,
                         }}

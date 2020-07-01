@@ -11,15 +11,12 @@
   --text-secodary: color(var(--text-primary) shade(20%));
 }
 
-/* Light mode? Are we supporting this? */
-@media screen and (prefers-color-scheme: light) {
-  :root {
+/* Light mode */
+[data-theme="light"] {
     --primary: #222;
-    --accent-color: #00bcd4;
     --background-primary: #fff;
     --text-primary: #222;
     --text-secodary: color(var(--text-primary) tint(10%));
-  }
 }
 
 /* purgecss end ignore */

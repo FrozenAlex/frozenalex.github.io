@@ -1,5 +1,99 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[FrozenAlex]]></title><description><![CDATA[My blog built on gatsby]]></description><link>https://frozenalex.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 01 Jul 2020 22:48:20 GMT</lastBuildDate><item><title><![CDATA[First post of 2020 and ever]]></title><description><![CDATA[alt text Hello internet, my name is Alex and this is my blog, where I’m going to write some articles.
-I am a web developer with a need to…]]></description><link>https://frozenalex.github.io/2020/first-post-ever/</link><guid isPermaLink="false">https://frozenalex.github.io/2020/first-post-ever/</guid><pubDate>Sat, 04 Jan 2020 12:40:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://images.unsplash.com/photo-1483309830935-35efd1b07946?ixlib=rb-1.2.1&amp;#x26;q=80&amp;#x26;fm=jpg&amp;#x26;crop=entropy&amp;#x26;cs=tinysrgb&amp;#x26;w=2000&amp;#x26;fit=max&amp;#x26;ixid=eyJhcHBfaWQiOjExNzczfQ&quot; alt=&quot;alt text&quot; title=&quot;Logo Title Text 1&quot;&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[FrozenAlex]]></title><description><![CDATA[My blog built on gatsby]]></description><link>https://frozenalex.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 04 Jul 2020 12:55:41 GMT</lastBuildDate><item><title><![CDATA[Summer of code]]></title><description><![CDATA[This summer I’m going to learn as much as I can to provide better service in the future. This website is going to undergo a ton of changes…]]></description><link>https://frozenalex.github.io/2020/summer-of-code/</link><guid isPermaLink="false">https://frozenalex.github.io/2020/summer-of-code/</guid><pubDate>Thu, 04 Jun 2020 13:25:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4620bd7fcb462040bdce8446fd0b1aa7/69b48/niklas-veenhuis-Q0AXQ8UctBc-unsplash.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.796875%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQBAv/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/aAAwDAQACEAMQAAABjpg3KcG//8QAGRAAAwEBAQAAAAAAAAAAAAAAAAERAgMS/9oACAEBAAEFAsQ64zHCs9uPTP/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAECAQE/AYf/xAAaEAABBQEAAAAAAAAAAAAAAAARAAECEiAy/9oACAEBAAY/AuSrRY5//8QAGxAAAgIDAQAAAAAAAAAAAAAAAREAQSExYVH/2gAIAQEAAT8hDBlaYIttVElFY8naBgWbeoRuuT//2gAMAwEAAgADAAAAEJMv/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFREBAQAAAAAAAAAAAAAAAAAAAQD/2gAIAQIBAT8QVBf/xAAbEAEBAAMAAwAAAAAAAAAAAAABEQAxQSFRsf/aAAgBAQABPxA+0SDpcUQ3sHlyfcaRWhxMt1SFu8A5VCWoOYiWMQUZ/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Dandelions&quot;
+        title=&quot;Some relevant picture&quot;
+        src=&quot;/static/4620bd7fcb462040bdce8446fd0b1aa7/87945/niklas-veenhuis-Q0AXQ8UctBc-unsplash.jpg&quot;
+        srcset=&quot;/static/4620bd7fcb462040bdce8446fd0b1aa7/b95e4/niklas-veenhuis-Q0AXQ8UctBc-unsplash.jpg 256w,
+/static/4620bd7fcb462040bdce8446fd0b1aa7/1779b/niklas-veenhuis-Q0AXQ8UctBc-unsplash.jpg 512w,
+/static/4620bd7fcb462040bdce8446fd0b1aa7/87945/niklas-veenhuis-Q0AXQ8UctBc-unsplash.jpg 1024w,
+/static/4620bd7fcb462040bdce8446fd0b1aa7/6afe2/niklas-veenhuis-Q0AXQ8UctBc-unsplash.jpg 1536w,
+/static/4620bd7fcb462040bdce8446fd0b1aa7/69b48/niklas-veenhuis-Q0AXQ8UctBc-unsplash.jpg 1920w&quot;
+        sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This summer I’m going to learn as much as I can to provide better service in the future. This website is going to undergo a ton of changes, since I want it to be a better platform for my thoughts, experiences and other things. &lt;/p&gt;
+&lt;p&gt;Hopefully it will work out &lt;strong&gt;and&lt;/strong&gt; I’ll be a &lt;em&gt;real developer&lt;/em&gt; at the end of it.&lt;/p&gt;
+&lt;p&gt;The things I want to improve:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pixel art;&lt;/li&gt;
+&lt;li&gt;3D Modeling;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Webdev:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Social Network Integration;&lt;/li&gt;
+&lt;li&gt;Writing bots;&lt;/li&gt;
+&lt;li&gt;Web design;&lt;/li&gt;
+&lt;li&gt;Vue and React. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I’m going to post most of the notable works on this website, I’m not sure in what form to post all of my works, but I’ll figure it out.&lt;/p&gt;
+&lt;p&gt;And a random quote 🙂&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I’m in danger&lt;/p&gt;
+&lt;p&gt;— &lt;cite&gt;Ralph Wiggum&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And a bit of source code to test my dark theme,
+PrismJS is awesome!&lt;/p&gt;
+&lt;p&gt;JavaScript&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Hello world adadsadadadasdasd&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;TypeScript&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;typescript&quot;&gt;&lt;pre class=&quot;language-typescript&quot;&gt;&lt;code class=&quot;language-typescript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fun&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;a&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;CSS&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.markdown&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--primary-color&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[First post of 2020]]></title><description><![CDATA[Hello internet, my name is Alex and this is my blog, where I’m going to write some articles.
+I am a web developer with a need to write down…]]></description><link>https://frozenalex.github.io/2020/first-post-ever/</link><guid isPermaLink="false">https://frozenalex.github.io/2020/first-post-ever/</guid><pubDate>Sat, 04 Jan 2020 12:40:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f61102b2fe6a2f3a2df353395d613cf3/109c0/photo-1483309830935-35efd1b07946.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.796875%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBP/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHcrMlSAv8A/8QAGhABAAIDAQAAAAAAAAAAAAAAAQIQAAMSIf/aAAgBAQABBQJ8w2DLqohX/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFxAAAwEAAAAAAAAAAAAAAAAAACAhQf/aAAgBAQAGPwIyr//EABsQAQACAgMAAAAAAAAAAAAAAAEAESFxMUGR/9oACAEBAAE/IVfG2EeFvalSbz1BW1mIi0s//9oADAMBAAIAAwAAABCn7//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABsQAQADAQEBAQAAAAAAAAAAAAEAESFRQWGB/9oACAEBAAE/EHoAi4mXXn7K1UQcbA8+bHCj3cip0MPIqANKhVt7CIRd9n//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Frosty picture&quot;
+        title=&quot;Random picture&quot;
+        src=&quot;/static/f61102b2fe6a2f3a2df353395d613cf3/87945/photo-1483309830935-35efd1b07946.jpg&quot;
+        srcset=&quot;/static/f61102b2fe6a2f3a2df353395d613cf3/b95e4/photo-1483309830935-35efd1b07946.jpg 256w,
+/static/f61102b2fe6a2f3a2df353395d613cf3/1779b/photo-1483309830935-35efd1b07946.jpg 512w,
+/static/f61102b2fe6a2f3a2df353395d613cf3/87945/photo-1483309830935-35efd1b07946.jpg 1024w,
+/static/f61102b2fe6a2f3a2df353395d613cf3/6afe2/photo-1483309830935-35efd1b07946.jpg 1536w,
+/static/f61102b2fe6a2f3a2df353395d613cf3/109c0/photo-1483309830935-35efd1b07946.jpg 2000w&quot;
+        sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Hello internet, my name is Alex and this is my blog, where I’m going to write some articles.
 I am a web developer with a need to write down important information. I’m too afraid of making changes to the public Wiki so I created my own personal space where I can write what I want and not care about reviews or anything lol.&lt;/p&gt;
 &lt;p&gt;If my article helped you or not you may let me know on Twitter, I like to see the results of taking time to write these articles and it will motivate me to write even more. And if you’ve got any problems, I’d be happy to help.&lt;/p&gt;
@@ -20,7 +114,7 @@ I am a web developer with a need to write down important information. I’m too 
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;alt text&quot;
+        alt=&quot;Read the flying manual&quot;
         title=&quot;Read The Flying Manual&quot;
         src=&quot;/static/be42ef00ac9a63780c2be1a771286bae/87945/peppercarrot-wallpaper_by-David-Revoy.jpg&quot;
         srcset=&quot;/static/be42ef00ac9a63780c2be1a771286bae/b95e4/peppercarrot-wallpaper_by-David-Revoy.jpg 256w,
@@ -33,4 +127,6 @@ I am a web developer with a need to write down important information. I’m too 
         loading=&quot;lazy&quot;
       /&gt;
   &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;For now I don’t really have anything to write about. But hopefully will write something in the future.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This blog is dead for now.&lt;/em&gt;&lt;/p&gt;</content:encoded></item></channel></rss>

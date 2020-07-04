@@ -1,7 +1,6 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../layouts/layout"
 import SEO from "../components/seo"
 
@@ -19,10 +18,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       />
       <article
         style={{
-          // boxSizing:"border-box",
-          // maxWidth:"1200px"
         }}
-        className="container mx-auto"
+        className="container mx-auto max-w-3xl"
       >
         <header className="text-center p-4">
           <h1 className="font-bold text-2xl md:text-3xl">{post.frontmatter.title}</h1>
@@ -37,7 +34,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
 
-      <nav>
+      <nav className="max-w-3xl mx-auto px-4 italic border-top ">
         <ul
           style={{
             display: `flex`,

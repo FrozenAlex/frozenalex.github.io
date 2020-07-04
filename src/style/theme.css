@@ -6,9 +6,9 @@
 :root {
   
   --accent: #00cbe6;
-  --background: #222;
-
-  --button-primary: rgb(255, 255, 255);
+  --background: #121212;
+  --background-lighter: #252525;
+  --button-primary: rgb(233, 230, 230);
   --button-secondary: #222;
   --button-primary-text: #222;
   --button-secondary-text: #222;
@@ -18,10 +18,11 @@
 
 /* Light mode */
 [data-theme="light"] {
-  --background: rgb(255, 255, 255);
+  --background: #fcfcfc;
+  --background-lighter: rgb(236, 234, 234);
   --accent: #00b3ca;
   --button-primary: #222;
-  --button-secondary: rgb(77, 77, 77);
+  --button-secondary: rgb(5, 4, 4);
   --button-primary-text: rgb(226, 226, 226);
   --button-secondary-text: rgb(255, 255, 255);
   --text-primary: rgb(0, 0, 0);

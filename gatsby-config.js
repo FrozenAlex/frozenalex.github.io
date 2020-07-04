@@ -54,7 +54,11 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-prismjs`,
+          
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {},
+          },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
@@ -89,10 +93,9 @@ module.exports = {
           require("postcss-import")(), // Add support for sass-like '@import'
           require("postcss-extend")(), // Add support for sass-like '@extend'
           require("postcss-nesting")(), // Add support for sass-like nesting of rules
+          require("postcss-simple-vars")(), // Sass variables
           require("tailwindcss"),
           require("postcss-color-function")(), // add color functions
-          // Preset env
-          // require('cssnano')() // Minify CSS
           ...(process.env.NODE_ENV === "production"
             ? [
                 // If not dev then build with these

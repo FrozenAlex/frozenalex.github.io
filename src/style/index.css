@@ -1,9 +1,13 @@
 /* CSS main file */
-@import "./colors.css"; /* Color scheme */
+@import "./theme.css"; /* Color scheme */
 @import "./tailwind.css"; /* Tailwind import */
 @import "./typography.css"; /* Typography*/
 @import "./navbar.css";
 @import "./input.css";
+
+/* purgecss start ignore */
+@import "prismjs/themes/prism-tomorrow.css";
+/* purgecss end ignore */
 
 /*** Things that have not many styles ***/
 

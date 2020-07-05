@@ -16,7 +16,12 @@ class Header extends React.Component<{}, { open: boolean }> {
     return (
       <header className="header" style={
         {
-          borderBottom: "var(--accent) solid"
+          borderBottom: "var(--accent) solid",
+          position: "fixed",
+          top:0,
+          left:0,
+          right:0,
+          zIndex: 999
         }
       }>
         

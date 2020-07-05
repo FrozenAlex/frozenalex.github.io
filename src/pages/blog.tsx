@@ -20,7 +20,7 @@ const BlogIndex = ({ data, location }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
               <Link key={node.fields.slug} to={node.fields.slug}>
-                <article className="rounded overflow-hidden shadow-lg">
+                <article className="rounded overflow-hidden shadow-lg bg-background">
                   <Img
                     className="h-64 w-full object-cover"
                     fluid={node.frontmatter.featuredImage.childImageSharp.fluid}

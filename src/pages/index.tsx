@@ -10,7 +10,14 @@ const SiteIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="Home" />
       {/* Hero */}
-      <div className="min-h-screen py-20">
+      <div className="min-h-screen flex flex-col justify-center"
+        style={
+          {
+            height: "calc(100vh - 65px)",
+            paddingBottom: "65px"
+          }
+        }
+      >
         <div className="container text-center mx-auto px-2">
           <h2 className="text-2xl md:text-4xl font-bold mb-2 text-white">
             Hi, my name is <span className="text-accent">Alex Uskov</span>

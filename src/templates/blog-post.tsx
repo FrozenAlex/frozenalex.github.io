@@ -10,7 +10,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const { previous, next } = pageContext
 
   return (
-    <Layout shrink={false} location={location} title={siteTitle}>
+    <Layout className="bg-background px-8 pb-4" shrink location={location} title={siteTitle}>
       {/* <Img className="h-screen w-full" fluid={post.frontmatter.featuredImage.childImageSharp.fluid} /> */}
       <SEO
         title={post.frontmatter.title}
@@ -18,11 +18,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         article={true}
         image={post.frontmatter.featuredImage.childImageSharp.fixed.src}
       />
-      <article
-        style={{
-        }}
-        className="container mx-auto max-w-3xl"
-      >
+      <article>
         <header className="text-center p-4">
           <h1 className="font-bold text-2xl md:text-3xl">{post.frontmatter.title}</h1>
           <p className="font-thin text-sm md:text-xl">{post.frontmatter.date}</p>

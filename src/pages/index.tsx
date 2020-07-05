@@ -8,7 +8,7 @@ const SiteIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Alex HomePage" />
+      <SEO title="Home" />
       {/* Hero */}
       <div className="min-h-screen py-20">
         <div className="container text-center mx-auto px-2">

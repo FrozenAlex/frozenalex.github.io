@@ -15,6 +15,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+        article={true}
+        image={post.frontmatter.featuredImage.childImageSharp.fixed.src}
       />
       <article
         style={{
@@ -83,6 +85,9 @@ export const pageQuery = graphql`
         description
         featuredImage {
           childImageSharp {
+            fixed(width: 512) {
+              ...GatsbyImageSharpFixed
+            }
             fluid(maxWidth: 1024) {
               ...GatsbyImageSharpFluid
             }

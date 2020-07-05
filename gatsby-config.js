@@ -10,17 +10,20 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
 module.exports = {
   siteMetadata: {
     title: `FrozenAlex`,
+    titleTemplate: "%s · FrozenAlex",
     author: {
       name: `FrozenAlex`,
       summary: `who likes to build stuff`,
     },
     description: `My blog built on gatsby`,
-    siteUrl: `https://frozenalex.github.io/`,
+    url: `https://alexx.ml`,
+    siteUrl: `https://alexx.ml`,
+    image: "",
     social: {
-      twitter: `FrosteeAlex`,
+      twitter: `@FrosteeAlex`,
       github: `FrozenAlex`,
       gitlab: `FrozenAlex`,
-    },
+    }
   },
   plugins: [
     {

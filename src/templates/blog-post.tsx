@@ -10,7 +10,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const { previous, next } = pageContext
 
   return (
-    <Layout className="bg-background px-8 pb-4" shrink location={location} title={siteTitle}>
+    <Layout className="bg-background md:px-4 lg:px-8 pb-4" shrink location={location} title={siteTitle}>
       {/* <Img className="h-screen w-full" fluid={post.frontmatter.featuredImage.childImageSharp.fluid} /> */}
       <SEO
         title={post.frontmatter.title}

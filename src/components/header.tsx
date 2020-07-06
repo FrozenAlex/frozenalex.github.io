@@ -95,7 +95,7 @@ class Header extends React.Component<{}, { open: boolean }> {
               </a>
               <a
                 className="block mt-4 lg:inline-block md:mt-0 text-teal-400 mr-4"
-                href="https://cloud.alexx.ml/s/m3PeT5YwqecfoMX"
+                href="https://cloud.alexx.ml/s/5tMTwfk7cnAwSy9"
                 target="__blank"
               >
                 Private

@@ -55,7 +55,7 @@
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "postcss-color-function": "^4.1.0",
     "postcss-simple-vars": "^5.0.2",
-    "prettier": "^2.0.4"
+    "prettier": "^2.0.5"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [

@@ -32,7 +32,7 @@
     "gatsby-remark-smartypants": "^2.3.10",
     "gatsby-source-filesystem": "^2.3.8",
     "gatsby-transformer-remark": "^2.8.27",
-    "gatsby-transformer-sharp": "^2.5.11",
+    "gatsby-transformer-sharp": "^2.5.12",
     "postcss-extend": "^1.0.5",
     "postcss-import": "^12.0.1",
     "postcss-nesting": "^7.0.1",

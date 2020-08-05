@@ -1,6 +1,7 @@
 import * as React from "react"
+import styles from "./layout.module.scss";
 
-import Header from "../components/header"
+import Header from "../components/Header"
 
 const Layout = ({
   shrink,
@@ -16,15 +17,10 @@ const Layout = ({
   className?: string
 }) => {
   return (
-    <div className="app mt-20"
-    style={
-      {
-        marginTop: "65px"
-      }
-    }>
+    <div className={styles.app} >
       <Header></Header>
       <main className={(className?className:"") + `${shrink ? " container mx-auto max-w-3xl  " : ""}`}>{children}</main>
-      <footer className="text-center my-8 mx-auto max-w-3xl">
+      <footer className={styles.footer}>
         © {new Date().getFullYear()}, <span className="text-accent">FrozenAlex</span>, Built with
         {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a>

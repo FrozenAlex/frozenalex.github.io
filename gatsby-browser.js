@@ -1,4 +1,4 @@
 // custom typefaces
 
-import "./src/style/index.css"
+import "./src/style/index.scss"
 import "typeface-open-sans"

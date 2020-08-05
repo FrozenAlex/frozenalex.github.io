@@ -1,12 +1,14 @@
 /* CSS main file */
-@import "./theme.css"; /* Color scheme */
-@import "./tailwind.css"; /* Tailwind import */
-@import "./typography.css"; /* Typography*/
-@import "./navbar.css";
-@import "./input.css";
+@import "./variables.scss"; /* Color scheme */
+@import "./theme.scss";
+// @import "./tailwind.scss"; /* Tailwind import */
+@import "./typography.scss"; /* Typography*/
+@import "./navbar.scss";
+@import "./input.scss";
+@import "./utility.scss";
 
 /* purgecss start ignore */
-@import "prismjs/themes/prism-tomorrow.css";
+@import "~prismjs/themes/prism-tomorrow.css";
 /* purgecss end ignore */
 
 /*** Things that have not many styles ***/
@@ -48,4 +50,21 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-primary)
+}
+
+// Styles for fonts
+.page-title{
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1.5rem 0;
+  @include respond-to('md'){
+    font-size: 2.25rem;
+
+  }
+  
 }

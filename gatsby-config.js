@@ -12,8 +12,8 @@ module.exports = {
     title: `FrozenAlex`,
     titleTemplate: "%s · FrozenAlex",
     author: {
-      name: `FrozenAlex`,
-      summary: `who likes to build stuff`,
+      name: `Alex Uskov`,
+      summary: `Fullstack web developer`,
     },
     description: `My blog built on gatsby`,
     url: `https://alexx.ml`,
@@ -90,31 +90,32 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    //`gatsby-plugin-offline`,
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-tsconfig-paths`,
     {
-      resolve: `gatsby-plugin-postcss`,
+      resolve: `gatsby-plugin-sass`,
       options: {
+        cssLoaderOptions: {
+          modules: false,
+          exportLocalsConvention: 'camelCase',
+        },
         postCssPlugins: [
-          require("postcss-import")(), // Add support for sass-like '@import'
-          require("postcss-extend")(), // Add support for sass-like '@extend'
-          require("postcss-nesting")(), // Add support for sass-like nesting of rules
-          require("postcss-simple-vars")(), // Sass variables
-          require("tailwindcss"),
-          require("postcss-color-function")(), // add color functions
           ...(process.env.NODE_ENV === "production"
             ? [
                 // If not dev then build with these
                 purgecss,
                 require(`postcss-preset-env`)({
-                  stage: 0,
+                  stage: 0
                 }),
+                require('cssnano')()
               ]
             : []),
-        ],
-      },
+        ]
+      }
+        
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-    `gatsby-plugin-typescript`,
   ],
 }

@@ -1,5 +1,17 @@
 {
-  "compilerOptions": {
-    "jsx": "react"
-  }
+	"compilerOptions": {
+		"jsx": "react",
+		"baseUrl": "./",
+		"plugins": [
+			{
+				"name": "typescript-plugin-css-modules",
+				"options": {
+					"classnameTransform": "camelCase",
+				}
+			}
+		],
+		"paths": {
+			"@/*": ["./src/*"]
+		}
+	}
 }

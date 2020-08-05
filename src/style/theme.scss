@@ -1,0 +1,49 @@
+/* Color scheme */
+
+/* purgecss start ignore */
+
+$transparency-percent: 0.7;
+$accent-color: #00cbe6;
+$comp-accent-color: complement($accent-color);
+
+// Dark theme
+$dark-background: #121212;
+$dark-background-transparent: transparentize($dark-background, $transparency-percent);
+$dark-primary-font-color: rgb(253, 253, 253);
+$dark-secondary-font-color: darken($dark-primary-font-color, 10%);
+
+// Light theme
+$light-background: #fcfcfc;
+$light-background-transparent: transparentize($light-background, $transparency-percent);
+$light-primary-font-color: rgb(47, 47, 47);
+$light-secondary-font-color: lighten($light-primary-font-color, 10%);
+
+/* Dark mode by default xD */
+:root {
+  --accent-color: #{$accent-color};
+  --complement-color: #{$comp-accent-color};
+  --background: #{$dark-background};
+  --background-transparent: #{$dark-background-transparent};
+  --background-lighter: #252525;
+  --button-primary: rgb(233, 230, 230);
+  --button-secondary: #222;
+  --button-primary-text: #222;
+  --button-secondary-text: #222;
+  --text-primary: #eee;
+  --text-secodary: color(var(--text-primary) shade(20%));
+}
+
+/* Light mode */
+[data-theme="light"] {
+  --background: #{$light-background};
+  --background-transparent: #{$light-background-transparent};
+  --background-lighter: rgb(236, 234, 234);
+  --button-primary: #222;
+  --button-secondary: rgb(5, 4, 4);
+  --button-primary-text: rgb(226, 226, 226);
+  --button-secondary-text: rgb(255, 255, 255);
+  --text-primary: rgb(0, 0, 0);
+  --text-secodary: color(var(--text-primary) shade(20%));
+}
+
+/* purgecss end ignore */

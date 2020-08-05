@@ -14,7 +14,7 @@ class ThemeSwitch extends React.Component<{}, { night: boolean }> {
     let icon = (this.state.night)? <FaMoon ></FaMoon>: <FaSun></FaSun>; 
 
     return (
-      <div  className="cursor-pointer" onClick={this.toggleTheme.bind(this)}>
+      <div  style={{cursor:"pointer", display: "inline-flex"}} onClick={this.toggleTheme.bind(this)}>
         {icon}
       </div>
     )

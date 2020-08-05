@@ -4,6 +4,15 @@
   "description": "A simple markdown blog made with Gatsby",
   "version": "0.1.0",
   "author": "Alex Uskov",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "cross-env GATSBY_ENV=\"development\" gatsby develop -H 0.0.0.0",
+    "format": "prettier --write \"**/*.{js,jsx,json,md,css,tsx,sass,scss}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
   "bugs": {
     "url": "https://github.com/FrozenAlex/frozenalex.github.io/issues"
   },
@@ -12,6 +21,7 @@
     "@types/react": "^16.9.44",
     "@types/react-dom": "^16.9.8",
     "@types/react-helmet": "^6.0.0",
+    "classnames": "^2.2.6",
     "cssnano": "^4.1.10",
     "cwebp-bin": "^6.1.1",
     "gatsby": "^2.24.24",
@@ -48,14 +58,21 @@
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
     "typeface-open-sans": "^0.0.75",
+    "typescript": "^3.9.7",
     "typography": "^0.16.19",
-    "typography-theme-wordpress-2016": "^0.16.19"
+    "typography-theme-wordpress-2016": "^0.16.19",
+    "webpack": "^4.44.1"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
+    "cross-env": "^7.0.2",
+    "gatsby-plugin-sass": "^2.3.11",
+    "gatsby-plugin-tsconfig-paths": "^1.0.2",
+    "node-sass": "^4.14.1",
     "postcss-color-function": "^4.1.0",
     "postcss-simple-vars": "^5.0.2",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "typescript-plugin-css-modules": "^2.4.0"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
@@ -65,19 +82,17 @@
     "> 2%",
     "not IE <= 11"
   ],
+  "prettier": {
+    "endOfLine": "lf",
+    "semi": false,
+    "useTabs": true,
+    "trailingComma": "es5",
+    "printWidth": 100
+  },
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
-  },
-  "scripts": {
-    "build": "gatsby build",
-    "dev": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md,css,tsx}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   }
 }

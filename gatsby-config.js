@@ -1,11 +1,11 @@
 // postcss.config.js
-const purgecss = require("@fullhuman/postcss-purgecss")({
-  // Specify the paths to all of the template files in your project
-  content: ["./src/**/*.jsx", "./src/**/*.vue", "./src/**/*.tsx"],
+// const purgecss = require("@fullhuman/postcss-purgecss")({
+//   // Specify the paths to all of the template files in your project
+//   content: ["./src/**/*.jsx", "./src/**/*.vue", "./src/**/*.tsx"],
 
-  // Include any special characters you're using in this regular expression
-  defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
-})
+//   // Include any special characters you're using in this regular expression
+//   defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
+// })
 
 module.exports = {
   siteMetadata: {
@@ -26,6 +26,14 @@ module.exports = {
     }
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+      options: {
+        analyzerMode: process.env.ANALYZE?"server": "disabled",
+        analyzerPort: "8888",
+        defaultSizes: "gzip"
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -106,7 +114,7 @@ module.exports = {
           ...(process.env.NODE_ENV === "production"
             ? [
                 // If not dev then build with these
-                purgecss,
+                // purgecss,
                 require(`postcss-preset-env`)({
                   stage: 0
                 }),

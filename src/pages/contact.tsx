@@ -9,6 +9,7 @@ import FormInput from "@/components/Form/FormInput"
 
 interface ContactPageState {
 	form: {
+		username: string
 		name: string
 		message: string
 		loading: boolean
@@ -22,8 +23,9 @@ class ContactPage extends React.Component<any, ContactPageState> {
 		super(props)
 		this.state = {
 			form: {
-				name: "",
+				username: "",
 				message: "",
+				name: "",
 				loading: false,
 				loadingMessage: "",
 				result: "",
@@ -51,11 +53,18 @@ class ContactPage extends React.Component<any, ContactPageState> {
 				>
 					{/* Name */}
 					<div className="mb-4">
-						<FormInput type="text" label="Name or Email" onChange={this.handleChange.bind(this)} name="name" />
+						<input name="name" className="hidden" onChange={this.handleChange.bind(this)} />
+						<FormInput
+							type="text"
+							value={this.state.form.username}
+							label="Name or Email"
+							onChange={this.handleChange.bind(this)}
+							name="username"
+						/>
 					</div>
 					{/* Message */}
 					<div className="mb-4">
-						<FormInput 
+						<FormInput
 							label="Message"
 							onChange={this.handleChange.bind(this)}
 							value={this.state.form.message}
@@ -80,6 +89,7 @@ class ContactPage extends React.Component<any, ContactPageState> {
 							type="file"
 							placeholder="File"
 							name="file"
+							multiple
 						/>
 					</div>
 					<div className="mb-4 text-center">
@@ -97,7 +107,7 @@ class ContactPage extends React.Component<any, ContactPageState> {
 		this.setState({ form: { ...this.state.form, [e.target.name]: e.target.value } })
 	}
 	validate() {
-		return this.state.form.message != "" && this.state.form.name != ""
+		return this.state.form.message != "" && this.state.form.username != ""
 	}
 	async handleSubmit(e: HTMLFormElement) {
 		e.preventDefault()
@@ -107,11 +117,14 @@ class ContactPage extends React.Component<any, ContactPageState> {
 		}
 		let data = new FormData()
 		data.append("name", this.state.form.name)
+		data.append("username", this.state.form.username)
 		data.append("message", this.state.form.message)
 		let fileInput = document.getElementById("file") as HTMLInputElement
-		let file = fileInput.files[0]
-		if (file) {
-			data.append("file", file)
+
+		let file = fileInput.files
+
+		for (let i = 0; i < file.length; i++) {
+			data.append("file", file[i])
 		}
 
 		try {
@@ -123,15 +136,16 @@ class ContactPage extends React.Component<any, ContactPageState> {
 				},
 			})
 			let result = await fetch("https://frozen-feedback.herokuapp.com/api", {
+			// let result = await fetch("http://localhost:8080/api", {
 				method: "POST",
 				body: data,
 			})
-			let json = await result.json()
-			if (json.type === "success") {
+			let text = await result.text()
+			if (result.status === 200) {
 				this.setState({
 					form: {
 						...this.state.form,
-						result: "Your message has been delivered. Thank you for your feedback!",
+						result: text,
 						loading: false,
 					},
 				})
@@ -144,9 +158,7 @@ class ContactPage extends React.Component<any, ContactPageState> {
 					},
 				})
 			}
-			console.log(json)
 		} catch (e) {
-			console.log(e)
 			this.setState({
 				form: {
 					...this.state.form,

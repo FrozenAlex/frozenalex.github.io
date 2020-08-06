@@ -15,7 +15,7 @@ module.exports = {
       name: `Alex Uskov`,
       summary: `Fullstack web developer`,
     },
-    description: `My blog built on gatsby`,
+    description: `Personal website/portfolio`,
     url: `https://alexx.ml`,
     siteUrl: `https://alexx.ml`,
     image: "",
@@ -56,7 +56,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1920,
-              quality: 85,
+              quality: 87,
               withWebp: true
             },
           },
@@ -69,15 +69,34 @@ module.exports = {
           
           {
             resolve: `gatsby-remark-prismjs`,
-            options: {},
+            options: {
+
+            },
           },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-sharp`,
+      options: {
+        // The option defaults to true
+        // checkSupportedExtensions: false,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        useMozJpeg: true,
+        stripMetadata: true,
+        defaultQuality: 80,
+        webpQuality: 90,
+        maxWidth: 1920,
+        srcSetBreakpoints: [ 200, 340, 520, 890, 1366, 1920 ],
+        toFormat: "WEBP"
+      }, 
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

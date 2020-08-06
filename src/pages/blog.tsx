@@ -28,7 +28,7 @@ const BlogIndex = ({ data, location }) => {
 									{/* Card */}
 									<div className={styles.articleInfo}>
 										<header>
-											<h1>{title}</h1>
+											<h2>{title}</h2>
 											<small>{node.frontmatter.date}</small>
 										</header>
 										<section>

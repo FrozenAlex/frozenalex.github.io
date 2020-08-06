@@ -3,10 +3,8 @@ title: Summer of code
 date: "2020-06-04T13:25:32.169Z"
 description: Alex Summer of code
 path: "/summer"
-featuredImage: markus-spiske-qjnAnF0jIGk-unsplash.jpg
+featuredImage: niklas-veenhuis-Q0AXQ8UctBc-unsplash.jpg
 ---
-
-![Dandelions](niklas-veenhuis-Q0AXQ8UctBc-unsplash.jpg "Some relevant picture")
 
 This summer I'm going to learn as much as I can to provide better service in the future. This website is going to undergo a ton of changes, since I want it to be a better platform for my thoughts, experiences and other things. 
 
@@ -24,7 +22,6 @@ The things I want to improve:
 I'm going to post most of the notable works on this website, I'm not sure in what form to post all of my works, but I'll figure it out.
 
 And a random quote 🙂
-
 
 
 > I'm in danger

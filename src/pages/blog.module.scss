@@ -22,21 +22,23 @@
 		}
 		& .article-info {
 			padding: 0.75rem;
-			& h1 {
-				font-weight: 700;
-				font-size: 1 rem;
+			border-top: solid var(--accent-color) 1px;
+			& h2 {
+				font-weight: 600;
+				font-size: 2rem;
 				margin: 0;
-				
 			}
-
 			& small {
 				opacity: 0.75;
 				margin: 0;
+				padding: 0;
 			}
 
 			& p {
 				opacity: 0.80;
 				font-size: 1rem;
+				margin-bottom: 0;
+				margin-top: 1em;
 			}
 		}
 	}

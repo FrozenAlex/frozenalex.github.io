@@ -1,5 +1,6 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { Link, graphql  } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../layouts/layout"
 import SEO from "../components/seo"
@@ -10,19 +11,20 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const { previous, next } = pageContext
 
   return (
-    <Layout className="bg-background md:px-4 lg:px-8 pb-4 container " shrink location={location} title={siteTitle}>
-      {/* <Img className="h-screen w-full" fluid={post.frontmatter.featuredImage.childImageSharp.fluid} /> */}
+    <Layout className="" shrink location={location} title={siteTitle}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
         article={true}
         image={post.frontmatter.featuredImage.childImageSharp.fixed.src}
       />
+      
       <article>
         <header className="text-center p-4">
           <h1 className="font-bold text-2xl md:text-3xl">{post.frontmatter.title}</h1>
           <p className="font-thin text-sm md:text-xl">{post.frontmatter.date}</p>
         </header>
+        <Img className="" fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />
         <section className="content px-4 lg:px-0" 
         dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>

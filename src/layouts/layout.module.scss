@@ -4,10 +4,11 @@
 // $navbar-height: 3em;
 
 .app {
-	margin-top: $navbar-height;
+	margin-top: $navbar-height + 1.5rem;
 }
 
 .footer {
 	text-align: center;
 	margin-top: 2rem;
+	margin-bottom: 1em;
 }

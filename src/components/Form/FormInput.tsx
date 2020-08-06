@@ -2,6 +2,7 @@ import styles from "./FormInput.module.scss"
 
 import * as React from "react"
 import { type } from "os"
+import classNames from "classnames";
 
 interface PropTypes {
 	onClick?: (event: React.MouseEvent<HTMLInputElement | HTMLTextAreaElement, MouseEvent>) => void
@@ -74,7 +75,7 @@ class FormInput extends React.Component<PropTypes> {
 
 		// Wrap the input
 		input = (
-			<div className={styles.inputWrapper}>
+			<div className={classNames(styles.inputWrapper, this.props.className)}>
 				{label}
 				{input}
 			</div>

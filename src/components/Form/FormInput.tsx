@@ -2,7 +2,7 @@ import styles from "./FormInput.module.scss"
 
 import * as React from "react"
 import { type } from "os"
-import classNames from "classnames";
+import classNames from "classnames"
 
 interface PropTypes {
 	onClick?: (event: React.MouseEvent<HTMLInputElement | HTMLTextAreaElement, MouseEvent>) => void
@@ -59,17 +59,17 @@ class FormInput extends React.Component<PropTypes> {
 			)
 		} else {
 			input = (
-					<input
-						className={styles.input}
-						type={this.props.type}
-						onChange={this.props.onChange}
-						onClick={this.props.onClick}
-						name={this.props.name}
-						placeholder={this.props.placeholder}
-						required={this.props.required}
-						maxLength={this.props.maxLength}
-						value={this.props.value}
-					/>
+				<input
+					className={styles.input}
+					type={this.props.type}
+					onChange={this.props.onChange}
+					onClick={this.props.onClick}
+					name={this.props.name}
+					placeholder={this.props.placeholder}
+					required={this.props.required}
+					maxLength={this.props.maxLength}
+					value={this.props.value}
+				/>
 			)
 		}
 

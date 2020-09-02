@@ -41,11 +41,13 @@ class ContactPage extends React.Component<any, ContactPageState> {
 				<SEO title="Contact" />
 				{/* Hero */}
 				<h1 className="page-title">Contact form</h1>
-				<div className="mx-auto container  bg-teal-400 result m-4 font-bold text-xl text-center"
-				style={{
-					margin:"1em auto 2em auto",
-					textAlign: "center",
-				}}>
+				<div
+					className="mx-auto container  bg-teal-400 result m-4 font-bold text-xl text-center"
+					style={{
+						margin: "1em auto 2em auto",
+						textAlign: "center",
+					}}
+				>
 					{this.state.form.result || ""}
 				</div>
 				<form
@@ -140,7 +142,7 @@ class ContactPage extends React.Component<any, ContactPageState> {
 				},
 			})
 			let result = await fetch("https://frozen-feedback.herokuapp.com/api", {
-			// let result = await fetch("http://localhost:8080/api", {
+				// let result = await fetch("http://localhost:8080/api", {
 				method: "POST",
 				body: data,
 			})

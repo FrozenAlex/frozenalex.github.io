@@ -91,9 +91,12 @@ class Header extends React.Component<{}, { open: boolean }> {
 						</Link>
 					</div>
 
-					<div style={{
-						alignContent: "right"
-					}} className={styles.alwaysVisible}>
+					<div
+						style={{
+							alignContent: "right",
+						}}
+						className={styles.alwaysVisible}
+					>
 						{linkList[1]}
 					</div>
 

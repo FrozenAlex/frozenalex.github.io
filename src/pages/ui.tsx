@@ -22,9 +22,9 @@ const UIKitView = ({ data, location }) => {
 			<h1 className="text-center">Inputs</h1>
 			<div className="container mx-auto">
 				<div style={{ display: "flex", justifyContent: "center" }}>
-					<FormInput label="Text" type="text" placeholder="text"/> 
-					<FormInput label="Email" type="email" placeholder="email"/>
-					<FormInput type="password" placeholder="password"/>
+					<FormInput label="Text" type="text" placeholder="text" />
+					<FormInput label="Email" type="email" placeholder="email" />
+					<FormInput type="password" placeholder="password" />
 				</div>
 			</div>
 

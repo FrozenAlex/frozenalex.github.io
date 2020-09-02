@@ -1,84 +1,83 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 // Container
 .container {
-  width: 100%;
-  @include respond-to('sm') {
-    max-width: $sm;
-  }
-  @include respond-to('md') {
-    max-width: $md;
-  }
-  @include respond-to('lg') {
-    max-width: $lg;
-  }
-  @include respond-to('xl') {
-    max-width: $xl;
-  }
+	width: 100%;
+	@include respond-to("sm") {
+		max-width: $sm;
+	}
+	@include respond-to("md") {
+		max-width: $md;
+	}
+	@include respond-to("lg") {
+		max-width: $lg;
+	}
+	@include respond-to("xl") {
+		max-width: $xl;
+	}
 }
 
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .hidden {
-  display: none;
+	display: none;
 }
 
 .text-center {
-  text-align: center;
+	text-align: center;
 }
 
 .text-accent {
-  color: var(--accent-color);
+	color: var(--accent-color);
 }
 
 .max-w-md {
-  max-width: 28rem;
+	max-width: 28rem;
 }
 
 .block {
-  display: block;
+	display: block;
 }
 
 .flex {
-  display: flex;
+	display: flex;
 }
 
 .justify-between {
-  justify-content: space-between;
+	justify-content: space-between;
 }
 
-
-.grid{
-  display: grid;
+.grid {
+	display: grid;
 }
 
 .shadow {
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 .appearance-none {
-  appearance: none;
+	appearance: none;
 }
 
 .border {
-  border-width: 1px;
+	border-width: 1px;
 }
 
 .rounded {
-  border-radius: 0.25rem;
+	border-radius: 0.25rem;
 }
 
 .w-full {
-  width: 100%;
+	width: 100%;
 }
 
 .max-w-3xl {
-  max-width: 48rem;
+	max-width: 48rem;
 }
 
 .font-bold {
-  font-weight: 700;
+	font-weight: 700;
 }

@@ -1,14 +1,13 @@
 /* Navbar component */
 .header {
-  background-color: var(--background);
-  color: var(--accent);
+	background-color: var(--background);
+	color: var(--accent);
 }
 
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 1rem;
-  
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 1rem;
 }

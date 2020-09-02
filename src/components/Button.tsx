@@ -1,5 +1,5 @@
 import styles from "./Button.module.scss"
-import classNames from "classnames";
+import classNames from "classnames"
 
 import * as React from "react"
 import { Link } from "gatsby"
@@ -31,7 +31,6 @@ class Button extends React.Component<PropTypes> {
 	}
 
 	render() {
-
 		let buttonClass = [styles.button]
 
 		// Class list formation
@@ -45,7 +44,6 @@ class Button extends React.Component<PropTypes> {
 					break
 			}
 		}
-
 
 		if (this.props.variant) {
 			switch (this.props.variant) {
@@ -80,9 +78,7 @@ class Button extends React.Component<PropTypes> {
 					onClick={this.props.onClick}
 					className={styles.button}
 					value={this.props.label}
-				>
-					
-				</input>
+				></input>
 			) : (
 				<button
 					disabled={this.props.disabled}

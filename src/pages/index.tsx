@@ -5,53 +5,47 @@ import Layout from "../layouts/layout"
 import SEO from "../components/seo"
 import Button from "../components/Button"
 
+import styled from "styled-components"
+import { Container } from "@/components/Container"
+
+let Hero = styled.div`
+	height: calc(100vh - 65px);
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0.5em 0.5em 65px 0.5em;
+	& h1 {
+		font-weight: 600;
+		font-size: 1.75em;
+		@media (min-width: 700px) {
+			font-size: 2em;
+		}
+	}
+	& h2 {
+		font-size: 1.5em;
+		@media (min-width: 700px) {
+			font-size: 1.75em;
+		}
+	}
+`
+
 const SiteIndex = ({ data, location }) => {
 	const siteTitle = data.site.siteMetadata.title
 	return (
 		<Layout location={location} title={siteTitle}>
 			<SEO title="Home" />
-			{/* Hero */}
-			<div
-				className="hero-block flex flex-col justify-center"
-				style={{
-					height: "calc(100vh - 65px)",
-					display: "flex",
-					flexDirection: "column",
-					justifyContent: "center",
-					paddingBottom: "65px",
-				}}
-			>
-				<div className="container text-center mx-auto px-2">
-					<h2
-						style={{
-							margin: 0,
-						}}
-						className="text-2xl md:text-4xl font-bold mb-2 text-white"
-					>
+			<Hero>
+				<Container>
+					<h1>
 						Hi, my name is <span className="text-accent">Alex Uskov</span>
-					</h2>
-					<h3
-						style={{
-							marginTop: "1em",
-						}}
-						className="text-xl md:text-2xl mb-8 text-textsecondary"
-					>
-						I make responsive websites with React and TypeScript and more
-						<br />
-					</h3>
+					</h1>
+					<h2>I make responsive websites with React and TypeScript and even more</h2>
 					<Button size="lg" to="/contact/">
 						Contact me
 					</Button>
-				</div>
-			</div>
-			{/* <div className="flex lg:flex-crow justify-center m-auto">
-        <div>
-          <h2 className="text-2xl md:text-4xl font-bold mb-2 text-white">About me</h2>
-        </div>
-        <div className="container mx-auto px-2 ">
-          <h3 className="text-xl md:text-2xl mb-8 text-textsecondary">About me</h3>
-        </div>
-      </div> */}
+				</Container>
+			</Hero>
 		</Layout>
 	)
 }

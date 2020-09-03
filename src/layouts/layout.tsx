@@ -18,7 +18,7 @@ const Layout = ({
 }) => {
 	return (
 		<div className={styles.app}>
-			<Header></Header>
+			<Header />
 			<main
 				className={
 					(className ? className : "") + `${shrink ? " container mx-auto max-w-3xl  " : ""}`

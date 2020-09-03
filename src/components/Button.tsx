@@ -89,8 +89,6 @@ class Button extends React.Component<PropTypes> {
 				</button>
 			)
 
-		// button.
-		// Attack link to the button
 		if (this.props.to) {
 			button = <Link to={this.props.to}>{button}</Link>
 		} else if (this.props.href) {

@@ -55,7 +55,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^3.11.0",
     "react-typography": "^0.16.19",
-    "styled-components": "^5.1.1",
+    "styled-components": "^5.2.0",
     "tailwindcss": "^1.7.6",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",

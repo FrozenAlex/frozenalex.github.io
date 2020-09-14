@@ -56,7 +56,7 @@
     "react-icons": "^3.11.0",
     "react-typography": "^0.16.19",
     "styled-components": "^5.2.0",
-    "tailwindcss": "^1.8.4",
+    "tailwindcss": "^1.8.10",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
     "typeface-open-sans": "^0.0.75",

@@ -6478,7 +6478,7 @@ gatsby-cli@^2.12.92:
     yargs "^15.3.1"
     yurnalist "^1.1.2"
 
-gatsby-core-utils@^1.3.18, gatsby-core-utils@^1.3.19:
+gatsby-core-utils@^1.3.19:
   version "1.3.19"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.3.19.tgz#d7f9981fbc85affbbc09c96ac84c76c37615fc89"
   integrity sha512-nwiU17m2lihvN7IOkBTj4n2WKc7Eb569Vv7G8dmuwthmjIB6ml98Quno5fRBCz+2DBF6R60boDfc84Qdct1LPw==
@@ -14902,10 +14902,10 @@ typeface-open-sans@^0.0.75:
   resolved "https://registry.yarnpkg.com/typeface-open-sans/-/typeface-open-sans-0.0.75.tgz#20d0c330f14c0c40463c334adbedd6005389abe4"
   integrity sha512-0lLmB7pfj113OP4T78SbpSmC4OCdFQ0vUxdSXQccsSb6qF76F92iEuC/DghFgmPswTyidk8+Hwf+PS/htiJoRQ==
 
-typescript-plugin-css-modules@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/typescript-plugin-css-modules/-/typescript-plugin-css-modules-2.4.0.tgz#64cc702ef5ef0d16cf95841cb576b05312fe1c57"
-  integrity sha512-+PUKk0Wb6/lvtYjLzdVUqkA2hQ84VH+zDZmpgXD8H9RhfTQ+YADSBJAsf66FZWB2sCENqeDuGVRyxvLxc5bBRw==
+typescript-plugin-css-modules@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/typescript-plugin-css-modules/-/typescript-plugin-css-modules-2.5.0.tgz#5b56d353113c8ea0b082c12474f878e160019d4e"
+  integrity sha512-nkFhQ1A3Cjxfu9ScGhJvcggRk52UZOb5huXz2/HqwR9dioVMJDlNF2gIToXQjHAzRI/jbXdcGjHv5AMqPvzknA==
   dependencies:
     dotenv "^8.2.0"
     icss-utils "^4.1.1"

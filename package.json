@@ -76,7 +76,7 @@
     "node-sass": "^4.14.1",
     "postcss-color-function": "^4.1.0",
     "postcss-simple-vars": "^5.0.2",
-    "prettier": "^2.1.1",
+    "prettier": "^2.1.2",
     "typescript-plugin-css-modules": "^2.5.0"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",

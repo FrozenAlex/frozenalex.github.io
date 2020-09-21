@@ -65,7 +65,7 @@
     "typescript": "^3.9.7",
     "typography": "^0.16.19",
     "typography-theme-wordpress-2016": "^0.16.19",
-    "webpack": "^4.44.1"
+    "webpack": "^4.44.2"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",

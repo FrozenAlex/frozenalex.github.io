@@ -68,7 +68,7 @@
     "webpack": "^4.44.1"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@fullhuman/postcss-purgecss": "^3.0.0",
     "cross-env": "^7.0.2",
     "gatsby-plugin-sass": "^2.3.11",
     "gatsby-plugin-tsconfig-paths": "^1.0.2",

@@ -15231,10 +15231,10 @@ typeface-open-sans@^0.0.75:
   resolved "https://registry.yarnpkg.com/typeface-open-sans/-/typeface-open-sans-0.0.75.tgz#20d0c330f14c0c40463c334adbedd6005389abe4"
   integrity sha512-0lLmB7pfj113OP4T78SbpSmC4OCdFQ0vUxdSXQccsSb6qF76F92iEuC/DghFgmPswTyidk8+Hwf+PS/htiJoRQ==
 
-typescript-plugin-css-modules@^2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/typescript-plugin-css-modules/-/typescript-plugin-css-modules-2.5.0.tgz#5b56d353113c8ea0b082c12474f878e160019d4e"
-  integrity sha512-nkFhQ1A3Cjxfu9ScGhJvcggRk52UZOb5huXz2/HqwR9dioVMJDlNF2gIToXQjHAzRI/jbXdcGjHv5AMqPvzknA==
+typescript-plugin-css-modules@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/typescript-plugin-css-modules/-/typescript-plugin-css-modules-2.7.0.tgz#778a74694296f41aa327110f9b41aa7b57d1ae0a"
+  integrity sha512-nNnbccNDs/i1ob4uX3FcgJdBQ17bmKulMwpLSMPsihgzCF6Ul0whnHq4WHkqnoLhFArbCVj6o4avgFJu57UoTQ==
   dependencies:
     dotenv "^8.2.0"
     icss-utils "^4.1.1"

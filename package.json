@@ -70,7 +70,7 @@
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0",
     "cross-env": "^7.0.2",
-    "gatsby-plugin-sass": "^2.3.14",
+    "gatsby-plugin-sass": "^2.3.18",
     "gatsby-plugin-tsconfig-paths": "^1.0.2",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.13",
     "node-sass": "^4.14.1",

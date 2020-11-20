@@ -10,7 +10,8 @@ import BottomNav from "@/components/article/BottomNav"
 
 const ArticleContainer = styled.article`
 	background: var(--background);
-	padding: 1em;
+	padding: 0 1em 1em 1em;
+
 `
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {

@@ -28,7 +28,7 @@
     "cssnano": "^4.1.10",
     "cwebp-bin": "^6.1.1",
     "gatsby": "^2.27.4",
-    "gatsby-image": "^2.5.0",
+    "gatsby-image": "^2.7.0",
     "gatsby-plugin-feed": "^2.9.0",
     "gatsby-plugin-google-analytics": "^2.5.0",
     "gatsby-plugin-manifest": "^2.8.0",

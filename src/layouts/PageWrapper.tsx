@@ -10,7 +10,7 @@ import Snow from "@/components/Snow"
 const PageWrapper = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<div>
-      <Header />
+      
 			{children}
 
 			{/*Persistent elements  */}

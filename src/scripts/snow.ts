@@ -56,7 +56,7 @@ export class SnowAnimation {
 				opacity: 1,
 				x: randomInt(width),
 				y: randomInt(height),
-        speed: randomFloat(0.1, 0.4),
+        speed: randomFloat(0.05, 0.2),
         size: randomInt(6),
 				angle: startAngle + Math.random() * (Math.PI/2),
 			}
@@ -78,7 +78,7 @@ export class SnowAnimation {
         flake.y = 0,
         flake.angle = startAngle + Math.random() * (Math.PI/2)
         flake.size = randomInt(6)
-        flake.speed = randomFloat(0.1, 0.4)
+        flake.speed = randomFloat(0.05, 0.2)
       }
 
 			flake.x = flake.x + flake.speed * delta * Math.cos(flake.angle)

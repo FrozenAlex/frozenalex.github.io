@@ -33,14 +33,14 @@ class Header extends React.Component<{}, { open: boolean }> {
 					name: "Contact",
 					to: "/contact/",
 				},
-				{
-					name: "Shared",
-					to: "https://cloud.alexx.ml/s/LA55ZXR2oR9adsn",
-				},
-				{
-					name: "Private",
-					to: "https://cloud.alexx.ml/s/5tMTwfk7cnAwSy9",
-				},
+				// {
+				// 	name: "Shared",
+				// 	to: "https://cloud.alexx.ml/s/LA55ZXR2oR9adsn",
+				// },
+				// {
+				// 	name: "Private",
+				// 	to: "https://cloud.alexx.ml/s/5tMTwfk7cnAwSy9",
+				// },
 				// Shows only in development
 				...(process.env.GATSBY_ENV === "development"
 					? [

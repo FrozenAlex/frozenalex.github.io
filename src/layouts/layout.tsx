@@ -1,7 +1,6 @@
 import * as React from "react"
 import styles from "./layout.module.scss"
 
-import Header from "../components/Header"
 
 const Layout = ({
 	shrink,
@@ -18,7 +17,6 @@ const Layout = ({
 }) => {
 	return (
 		<div className={styles.app}>
-			<Header />
 			<main
 				className={
 					(className ? className : "") + `${shrink ? " container mx-auto max-w-3xl  " : ""}`

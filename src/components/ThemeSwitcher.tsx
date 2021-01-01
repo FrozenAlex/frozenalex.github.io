@@ -15,8 +15,12 @@ class ThemeSwitch extends React.Component<{}, { night: boolean }> {
 
 		return (
 			<div
-				style={{ cursor: "pointer", display: "inline-flex" }}
-				onClick={this.toggleTheme.bind(this)}
+				style={{ 
+					// cursor: "pointer", 
+					display: "inline-flex" 
+				}}
+				// Blackout xD
+				// onClick={this.toggleTheme.bind(this)}
 			>
 				{icon}
 			</div>

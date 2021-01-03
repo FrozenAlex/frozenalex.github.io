@@ -24,7 +24,7 @@ export class SnowAnimation {
 		this.ctx = ctx
 		this.element = element
 		this.resizeCanvas()
-		this.createSnow(75)
+		this.createSnow(50)
 	}
 
   // Starts snow
@@ -85,9 +85,8 @@ export class SnowAnimation {
 			flake.y = flake.y - flake.speed * delta * Math.sin(flake.angle)
 		})
 
-    this.ctx.clearRect(0,0,width, height);
+		this.ctx.clearRect(0,0,width, height);
     // Render step
-    
 		this.snowflakes.forEach((snowflake) => {
       this.ctx.beginPath()
 			this.ctx.arc(snowflake.x, snowflake.y, snowflake.size, 0, 2 * Math.PI )

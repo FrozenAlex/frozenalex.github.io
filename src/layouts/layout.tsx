@@ -26,11 +26,6 @@ const Layout = ({
 			>
 				{children}
 			</main>
-			<footer className={styles.footer}>
-				© {new Date().getFullYear()}, <span className="text-accent">FrozenAlex</span>, Built with
-				{` `}
-				<a href="https://www.gatsbyjs.org">Gatsby</a>
-			</footer>
 		</div>
 	)
 }

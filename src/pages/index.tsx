@@ -9,12 +9,11 @@ import styled from "styled-components"
 import { Container } from "@/components/Container"
 
 let Hero = styled.div`
-	height: calc(100vh - 65px);
+	height: calc(100vh - 73px);
 	display: flex;
 	text-align: center;
 	flex-direction: column;
 	justify-content: center;
-	padding: 0.5em 0.5em 65px 0.5em;
 	& h1 {
 		font-weight: 600;
 		font-size: 1.75em;

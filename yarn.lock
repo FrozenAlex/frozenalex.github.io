@@ -6668,10 +6668,10 @@ gatsby-plugin-react-helmet@^3.8.0:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-gatsby-plugin-sass@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-3.0.0.tgz#72f6179e1d09010ba51edc6489d12d88c0ca093e"
-  integrity sha512-j3E7psI3EB0AlcqdouEtwjudpcorPMud5sbL+DWcxXAcpsbctUcEGCfSZR2pXHsjdip7ghaCR+hXIpXFO/AKnA==
+gatsby-plugin-sass@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-3.1.0.tgz#7b957862904ae84a2f474c5f2ef9cc0b889da78f"
+  integrity sha512-65d+ZTimxMlwRu+o92eaSM44vE+H4LoHWGjlRvdQ0OJbLlY1eQYOWaZwcf+bM6GIgj6uTBAnOslaYyhwg2UR9A==
   dependencies:
     "@babel/runtime" "^7.12.5"
     sass-loader "^10.1.0"
@@ -6908,7 +6908,7 @@ gatsby-source-filesystem@^2.9.1:
     valid-url "^1.0.9"
     xstate "^4.14.0"
 
-gatsby-telemetry@^1.8.1, gatsby-telemetry@^1.9.0:
+gatsby-telemetry@^1.9.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-1.9.0.tgz#91083de2f85c3dc69a38653fddd5e33af0daab75"
   integrity sha512-RWjA7/oG+Z2m/gNhv9/rvOjcKxSNm9n+PaVfTJGcQa5M3BTLwkf9tPSswpo8WAPu2kgnlql3bH12eKB61f5VAw==

@@ -33,6 +33,10 @@ class Header extends React.Component<{}, { open: boolean }> {
 					name: "Contact",
 					to: "/contact/",
 				},
+				{
+					name: "Donate",
+					to: "/donate/",
+				},
 				// {
 				// 	name: "Shared",
 				// 	to: "https://cloud.alexx.ml/s/LA55ZXR2oR9adsn",

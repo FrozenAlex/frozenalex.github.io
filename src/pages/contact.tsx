@@ -7,6 +7,14 @@ import LoadingOverlay from "../components/loadingOverlay"
 import Button from "@/components/Button"
 import FormInput from "@/components/Form/FormInput"
 
+import styled from "styled-components"
+
+let FileInput = styled.input`
+	padding: 5px;
+	text-align: center;
+`
+
+
 interface ContactPageState {
 	form: {
 		username: string
@@ -57,7 +65,7 @@ class ContactPage extends React.Component<any, ContactPageState> {
 					encType="multipart/form-data"
 					onSubmit={this.handleSubmit.bind(this)}
 				>
-					{/* Name */}
+					
 					<div className="mb-4">
 						<input name="name" className="hidden" onChange={this.handleChange.bind(this)} />
 						<FormInput
@@ -68,7 +76,7 @@ class ContactPage extends React.Component<any, ContactPageState> {
 							name="username"
 						/>
 					</div>
-					{/* Message */}
+					
 					<div className="mb-4">
 						<FormInput
 							label="Message"
@@ -84,12 +92,12 @@ class ContactPage extends React.Component<any, ContactPageState> {
 					{/* Filename */}
 					<div className="mb-4">
 						<label
-							className="block text-gray-700 text-md text-center font-bold mb-2"
+							className="block text-gray-700 text-md text-center font-bold mb-2 mt-2"
 							htmlFor="file"
 						>
 							File
 						</label>
-						<input
+						<FileInput
 							className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
 							id="file"
 							type="file"
@@ -142,7 +150,6 @@ class ContactPage extends React.Component<any, ContactPageState> {
 				},
 			})
 			let result = await fetch("https://frozen-feedback.herokuapp.com/api", {
-				// let result = await fetch("http://localhost:8080/api", {
 				method: "POST",
 				body: data,
 			})

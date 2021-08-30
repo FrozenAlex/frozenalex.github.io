@@ -12,6 +12,9 @@
 /* purgecss end ignore */
 
 /*** Things that have not many styles ***/
+html {
+	background-color: var(--background);
+}
 
 body {
 	margin: 0;

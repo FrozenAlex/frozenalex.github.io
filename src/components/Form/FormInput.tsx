@@ -39,7 +39,7 @@ interface PropTypes {
 
 class FormInput extends React.Component<PropTypes> {
 	render() {
-		let label = <label htmlFor={this.props.name}>{this.props.label}</label>
+		let label = <label className="mt-4" htmlFor={this.props.name}>{this.props.label}</label>
 
 		let input
 

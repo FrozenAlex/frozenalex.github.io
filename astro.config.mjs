@@ -9,7 +9,7 @@ export default defineConfig({
   output: 'hybrid',
   adapter: vercel({
     webAnalytics: {
-      enabled: true,
+      enabled: false,
     },
     maxDuration: 8,
   })

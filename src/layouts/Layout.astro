@@ -1,0 +1,61 @@
+---
+import Header from '../components/Header.astro';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="">
+		<Header/>
+		<main>
+			<slot />
+		</main>
+	</body>
+</html>
+<style is:global>
+
+
+	/* Prefers color scheme (dark by default) */
+	:root {
+		--bg: #23262d;
+		--bg-alt: #1a1c23;
+		--text: #fff;
+		--accent: #0084ff;
+		--accent-alt: #00b3ff;
+		--accent-gradient: linear-gradient(90deg, var(--accent) 0%, var(--accent-alt) 100%);
+	}
+	@media (prefers-color-scheme: light) {
+		:root {
+			--bg: #f9f9f9;
+			--bg-alt: #fff;
+			--text: #000;
+			--accent: #0084ff;
+			--accent-alt: #00b3ff;
+			--accent-gradient: linear-gradient(90deg, var(--accent) 0%, var(--accent-alt) 100%);
+		}
+	}
+
+	html {
+		size: 16px;
+		background-color: var(--bg);
+		color: var(--text);
+	}
+
+	body {
+		
+
+	}
+</style>

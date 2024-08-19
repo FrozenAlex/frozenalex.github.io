@@ -1,0 +1,43 @@
+---
+interface Props {
+	title?: string;
+}
+
+const items = [
+    {
+        title: 'Home',
+        href: '/',
+    },
+    {
+        title: 'About',
+        href: '/about',
+    },
+    {
+        title: 'Contact',
+        href: '/contact',
+    },
+];
+
+const { title } = Astro.props;
+---
+
+<div class="sticky top-0 right-0 left-0 bg-bg-alt h-16">
+    <div class="container h-full mx-auto flex justify-between ">
+        <a class="h-full flex items-center hover:text-accent-alt transition-all cursor-pointer text-xl" href="/">
+            <span>FrozenAlex</span>
+        </a>
+        <nav class="h-full">
+            <ul class="gap-8 flex h-full">
+                {items.map((item)=> (
+                    <li class="h-full  hover:text-accent-alt transition-all cursor-pointer">
+                        <a class="h-full flex items-center" href={item.href}><span>{item.title}</span></a>
+                    </li>
+                ))}
+        </nav>
+    </div>
+    
+</div>
+
+<script>
+    console.log('Header.astro');
+</script>

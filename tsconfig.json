@@ -1,18 +1,3 @@
 {
-	"compilerOptions": {
-		"jsx": "react",
-		"baseUrl": "./",
-		"incremental": true,
-		"plugins": [
-			{
-				"name": "typescript-plugin-css-modules",
-				"options": {
-					"classnameTransform": "camelCase"
-				}
-			}
-		],
-		"paths": {
-			"@/*": ["./src/*"]
-		}
-	}
+  "extends": "astro/tsconfigs/strict"
 }

@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+
+/* Dark mode styles */
+:root {
+    --bg-color: #121212;
+    --accent-color: #32f7f7;
+    --text-color: #ffffff;
+}
+
+@media (prefers-color-scheme: light) {
+    /* Light mode styles */
+    :root {
+        --bg-color: #ffffff;
+        --text-color: #000000;
+        --accent-color: #1f9f9f;
+    }
+}
+
+.light {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --accent-color: #1f9f9f;
+}
+
+.dark {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --accent-color: #32f7f7;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    min-height: 100dvh; /* For mobile browsers that support dynamic viewport units */
+}
+
+.accent {
+    color: var(--accent-color);
+}
+
+.accent-hover {
+    transition: color 0.3s ease;
+}
+.accent-hover:hover {
+    color: var(--accent-color);
+    cursor: pointer;
+}
+

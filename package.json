@@ -1,0 +1,24 @@
+{
+  "name": "",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.4.0",
+    "@iconify-json/mdi": "^1.2.3",
+    "@iconify/json": "^2.2.390",
+    "@tailwindcss/vite": "^4.1.13",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "astro": "^5.14.1",
+    "astro-icon": "^1.1.5",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwindcss": "^4.1.13"
+  }
+}

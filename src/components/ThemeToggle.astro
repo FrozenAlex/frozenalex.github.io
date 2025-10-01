@@ -1,0 +1,76 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+    /**
+     * If true, the toggle will be fixed to the bottom right corner of the screen
+     */
+    fixed?: boolean;
+    /**
+     *  Size of the icon in pixels (default: 27)
+     */
+    size?: number
+}
+const { fixed = false, size = 27 } = Astro.props;
+---
+
+<!-- Dark mode toggle -->
+<div class:list={[
+    "site-theme-toggle",
+    { "fixed": fixed }
+]}>
+  <Icon name="mdi:theme-light-dark" size={size} class="icond" />
+</div>
+
+<style lang="postcss">
+  .site-theme-toggle {
+    color: var(--color-text);
+    border-radius: 9999px;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .site-theme-toggle.fixed {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .site-theme-toggle:hover {
+    background-color: var(--color-bg-hover);
+    border-color: var(--color-border-hover);
+  }
+
+  .icond {
+    color: var(--color-text);
+  }
+</style>
+
+<script lang="ts">
+  const toggles = document.querySelectorAll(".site-theme-toggle");
+  toggles.forEach((toggle) => {
+    toggle.addEventListener("click", () => {
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+
+      let currentDark = false;
+
+      if (localStorage.getItem("theme")) {
+        currentDark = localStorage.getItem("theme") === "dark";
+      } else {
+        currentDark = prefersDark;
+      }
+
+      const newTheme = currentDark ? "light" : "dark";
+      const oldTheme = currentDark ? "dark" : "light";
+
+      document.body.classList.remove(`${oldTheme}`);
+      document.body.classList.add(`${newTheme}`);
+
+      // Get current preferred theme
+      localStorage.setItem("theme", newTheme);
+    });
+  });
+</script>

@@ -1,0 +1,109 @@
+---
+import "../styles/global.css";
+interface Props {
+  title?: string;
+  description?: string;
+  publishDate?: string;
+  keywords?: string;
+  hasFooter?: boolean;
+  hasHeader?: boolean;
+  /**
+   * If true, the content will not be wrapped in a <main> tag
+   */
+  noMain?: boolean;
+}
+
+const {
+  title,
+  description,
+  publishDate,
+  keywords,
+  hasFooter = false,
+  hasHeader = false,
+  noMain = false,
+} = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Icon stuff -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="author" content="FrozenAlex" />
+    {description && <meta name="description" content={description} />}
+    {keywords && <meta name="keywords" content={keywords} />}
+    <meta name="theme-color" content="#000000" />
+    {publishDate && <meta name="publish_date" content={publishDate} />}
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content={title ? title : "FrozenAlex"} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <title>{title}</title>
+  </head>
+  <body>
+    {
+      hasHeader && (
+        <header>
+          <h1>{title}</h1>
+          <a href="/">Home</a>
+          <a href="/projects">Projects</a>
+          <a href="/contact">Contact</a>
+        </header>
+      )
+    }
+    {
+      noMain ? (
+        <slot />
+      ) : (
+        <main>
+          <slot />
+        </main>
+      )
+    }
+    {
+      hasFooter && (
+        <footer class="text-center p-4 mt-8 border-t">
+          <p class="text-sm text-gray-500">
+            &copy; {new Date().getFullYear()} FrozenAlex. All rights reserved.
+          </p>
+        </footer>
+      )
+    }
+  </body>
+  <script>
+    if (localStorage.getItem("theme")) {
+      const newTheme = localStorage.getItem("theme");
+      document.body.classList.add(`${newTheme}`);
+    }
+  </script>
+</html>
+
+<style lang="postcss">
+  body {
+    transition: color 0.3s, background-color 0.3s;
+  }
+  header {
+      background-color: #222;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      top: 0;
+  }
+</style>

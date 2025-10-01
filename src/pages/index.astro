@@ -1,0 +1,90 @@
+---
+import { Image } from "astro:assets";
+import MainLayout from "../layouts/MainLayout.astro";
+import iceCube from "../images/iceCube.png";
+import ghAvatar from "../images/gh-avatar.jpg";
+import { Icon } from "astro-icon/components";
+import ThemeToggle from "../components/ThemeToggle.astro";
+---
+
+<MainLayout
+  title="FrozenAlex 🧊"
+  description="FrozenAlex's personal website"
+  noMain
+>
+  <main>
+    <a href="https://github.com/FrozenAlex" target="_blank">
+      <Image
+        class="w-70 h-70 rounded-full"
+        src={ghAvatar}
+        alt="Github avatar"
+      />
+    </a>
+
+    <a>
+      <h1 class="text-5xl font-bold mt-3">
+        <span class="accent">Frozen</span>Alex
+      </h1>
+    </a>
+
+    <p class="text-xl text-center mt-1">
+      <a class="transition-all hover:text-green-400">Node</a>/<a
+        class="transition-all hover:text-blue-400">React</a
+      >
+      developer
+      <br />
+    </p>
+    <p class=" text-center mt-2">
+      I build modern applications/web sites. <br />
+      I make Beat Saber mods in my free time. <br />
+    </p>
+
+    <ul class="flex gap-4 mt-4 mb-3">
+      <li class="inline-block">
+        <a href="mailto:work@frozenalex.com" class="py-2"
+          ><Icon
+            name="mdi:email"
+            class="text-lime-600 dark:text-lime-200"
+            size={25}
+          /></a
+        >
+      </li>
+      <li class="inline-block">
+        <a
+          href="https://www.linkedin.com/in/frozenalex"
+          target="_blank"
+          class="py-2"
+          ><Icon
+            name="mdi:linkedin"
+            class="text-blue-500 dark:text-blue-200"
+            size={25}
+          /></a
+        >
+      </li>
+      <li class="inline-block">
+        <a href="https://github.com/FrozenAlex" target="_blank" class="py-2"
+          ><Icon
+            name="mdi:github"
+            class="text-black-300 dark:text-gray-100"
+            size={25}
+          /></a
+        >
+      </li>
+    </ul>
+    <ThemeToggle fixed />
+  </main>
+</MainLayout>
+
+<style lang="postcss">
+  main {
+	min-height: 100vh;
+	min-height: 100dvh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 2rem;
+  }
+</style>

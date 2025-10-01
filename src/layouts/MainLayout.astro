@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import ghAvatar from "./../images/gh-avatar.jpg";
 interface Props {
   title?: string;
   description?: string;
@@ -11,6 +12,7 @@ interface Props {
    * If true, the content will not be wrapped in a <main> tag
    */
   noMain?: boolean;
+  socialImage?: string;
 }
 
 const {
@@ -21,6 +23,7 @@ const {
   hasFooter = false,
   hasHeader = false,
   noMain = false,
+  socialImage,
 } = Astro.props;
 ---
 
@@ -51,7 +54,11 @@ const {
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content={title ? title : "FrozenAlex"} />
     {description && <meta property="og:description" content={description} />}
-    <meta property="og:type" content="website" />
+    {socialImage ? (
+      <meta property="og:image" content={socialImage} />
+    ) : (
+      <meta property="og:image" content={new URL(ghAvatar.src, Astro.site).href} />
+    )}
     <meta property="og:url" content={Astro.url} />
     <title>{title}</title>
   </head>

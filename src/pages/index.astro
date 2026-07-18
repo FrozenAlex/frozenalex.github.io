@@ -1,9 +1,9 @@
 ---
-import { Picture } from "astro:assets";
 import MainLayout from "../layouts/MainLayout.astro";
 import ghAvatar from "../images/gh-avatar.jpg";
 import { Icon } from "astro-icon/components";
 import ThemeToggle from "../components/ThemeToggle.astro";
+import WebGLImage from "../components/WebGLImage.astro";
 
 const linkIconSize = 32;
 ---
@@ -21,10 +21,7 @@ const linkIconSize = 32;
       aria-label="Open FrozenAlex on GitHub"
       class="select-none"
     >
-      <Picture
-        formats={["avif", "webp"]}
-        sizes={"280px"}
-        class="size-[280px] rounded-full"
+      <WebGLImage
         src={ghAvatar}
         alt="FrozenAlex GitHub avatar"
       />

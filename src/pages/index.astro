@@ -14,27 +14,31 @@ const linkIconSize = 32;
   noMain
 >
   <main>
-    <a href="https://github.com/FrozenAlex" target="_blank" class="select-none">
+    <a
+      href="https://github.com/FrozenAlex"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Open FrozenAlex on GitHub"
+      class="select-none"
+    >
       <Picture
         formats={["avif", "webp"]}
         sizes={"280px"}
         class="size-[280px] rounded-full"
         src={ghAvatar}
-        alt="Github avatar"
+        alt="FrozenAlex GitHub avatar"
       />
     </a>
 
-    <a>
-      <h1 class="text-5xl font-bold mt-3">
-        <span class="accent">Frozen</span>Alex
-      </h1>
-    </a>
+    <h1 class="text-5xl font-bold mt-3">
+      <span class="accent">Frozen</span>Alex
+    </h1>
 
     <p class="text-xl text-center mt-1">
-      <a class="transition-all hover:text-green-400">Node</a>/<a
-        class="transition-all hover:text-blue-400">React</a
+      <span class="transition-all hover:text-green-400">Node</span>/<span
+        class="transition-all hover:text-blue-400">React</span
       >
-      developer
+      {" "}developer
       <br />
     </p>
     <p class="text-center mt-2">
@@ -43,7 +47,12 @@ const linkIconSize = 32;
     </p>
     <ul class="flex gap-4 mt-4 mb-3">
       <li class="inline-block">
-        <a href="https://ko-fi.com/frozenalex" target="_blank" class="py-2"
+        <a
+          href="https://ko-fi.com/frozenalex"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Support FrozenAlex on Ko-fi"
+          class="py-2"
           ><Icon
             name="kofi"
             class="text-pink-500 dark:text-pink-300"
@@ -52,7 +61,10 @@ const linkIconSize = 32;
         >
       </li>
       <li class="inline-block">
-        <a href="mailto:work@frozenalex.com" class="py-2"
+        <a
+          href="mailto:work@frozenalex.com"
+          aria-label="Email FrozenAlex"
+          class="py-2"
           ><Icon
             name="mdi:email"
             class="text-lime-600 dark:text-lime-200"
@@ -64,6 +76,8 @@ const linkIconSize = 32;
         <a
           href="https://www.linkedin.com/in/frozenalex"
           target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open FrozenAlex on LinkedIn"
           class="py-2"
           ><Icon
             name="mdi:linkedin"
@@ -73,7 +87,12 @@ const linkIconSize = 32;
         >
       </li>
       <li class="inline-block">
-        <a href="https://github.com/FrozenAlex" target="_blank" class="py-2"
+        <a
+          href="https://github.com/FrozenAlex"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open FrozenAlex GitHub profile"
+          class="py-2"
           ><Icon
             name="mdi:github"
             class="text-black-300 dark:text-gray-100"

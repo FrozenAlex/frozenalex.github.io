@@ -9,16 +9,23 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^4.4.0",
+    "@astrojs/react": "^6.0.1",
     "@iconify-json/mdi": "^1.2.3",
     "@iconify/json": "^2.2.390",
-    "@tailwindcss/vite": "^4.1.13",
+    "@tailwindcss/vite": "^4.3.3",
     "@types/react": "^19.1.16",
     "@types/react-dom": "^19.1.9",
-    "astro": "^5.14.1",
+    "astro": "^7.1.1",
     "astro-icon": "^1.1.5",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "tailwindcss": "^4.1.13"
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "sharp@0.34.4": true
   }
 }

@@ -1,0 +1,34 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import ghAvatar from "../images/gh-avatar.jpg";
+import { Icon } from "astro-icon/components";
+import ThemeToggle from "../components/ThemeToggle.astro";
+import WebGLImage from "../components/WebGLImage.astro";
+
+const linkIconSize = 32;
+---
+
+<MainLayout
+  title="FrozenAlex 🧊"
+  description="NodeJS/ReactJS fullstack developer"
+  noMain
+>
+  <main>
+    <a href="https://github.com/Lumince/singularity/releases/download/v1.0.6.7/Singularity.apk">Singularity APK</a>
+    <ThemeToggle fixed />
+  </main>
+</MainLayout>
+
+<style lang="postcss">
+  main {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+</style>
